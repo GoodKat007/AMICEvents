@@ -14,20 +14,26 @@ export default function HomePage() {
       <div className="fixed inset-0 bg-gradient-radial from-yellow-500/15 via-transparent to-transparent opacity-30 z-0"></div>
 
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 bg-slate-900/80 backdrop-blur-xl border-b border-emerald-500/20 z-50 h-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-8 h-full flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="w-8 h-8 bg-gradient-to-r from-blue-900 to-yellow-500 rounded-lg flex items-center justify-center">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+      <nav className="fixed top-0 left-0 right-0 bg-slate-900/80 backdrop-blur-xl border-b border-emerald-500/20 z-50 h-14 sm:h-16">
+        <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-full flex items-center justify-between">
+          <div className="flex items-center gap-2 sm:gap-3">
+            <div className="w-6 h-6 sm:w-8 sm:h-8 bg-gradient-to-r from-blue-900 to-yellow-500 rounded-lg flex items-center justify-center">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="white"
+                className="sm:w-5 sm:h-5"
+              >
                 <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"></path>
               </svg>
             </div>
-            <span className="text-white text-lg sm:text-xl font-bold">
+            <span className="text-white text-base sm:text-lg lg:text-xl font-bold">
               AMIC Events
             </span>
           </div>
-          <div className="flex items-center gap-4">
-            <div className="hidden md:flex items-center gap-8">
+          <div className="flex items-center gap-2 sm:gap-4">
+            <div className="hidden lg:flex items-center gap-6">
               <a
                 href="#products"
                 className="text-slate-300 text-sm hover:text-white transition-colors"
@@ -53,7 +59,7 @@ export default function HomePage() {
                 Contact
               </a>
             </div>
-            <button className="bg-gradient-to-r from-blue-900 to-yellow-500 text-white border-none px-3 py-2 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium cursor-pointer hover:opacity-90 transition-opacity">
+            <button className="bg-gradient-to-r from-blue-900 to-yellow-500 text-white border-none px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg text-xs sm:text-sm font-medium cursor-pointer hover:opacity-90 transition-opacity whitespace-nowrap">
               Get Quote
             </button>
           </div>
@@ -61,7 +67,7 @@ export default function HomePage() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-20 sm:pt-32 pb-12 sm:pb-20 px-4 sm:px-8 relative z-10">
+      <section className="pt-16 sm:pt-24 lg:pt-32 pb-12 sm:pb-20 px-3 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div>
             <div className="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/30 rounded-full px-4 py-2 mb-6">
@@ -166,7 +172,7 @@ export default function HomePage() {
       {/* Products Section */}
       <section
         id="products"
-        className="py-12 sm:py-20 px-4 sm:px-8 relative z-10"
+        className="py-12 sm:py-20 px-3 sm:px-6 lg:px-8 relative z-10"
       >
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12 sm:mb-16">
@@ -178,12 +184,12 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-3 sm:gap-4 mb-8 sm:mb-12">
+          <div className="flex flex-wrap justify-center gap-2 sm:gap-3 lg:gap-4 mb-8 sm:mb-12 px-2">
             {categories.map((category) => (
               <button
                 key={category}
                 onClick={() => setSelectedCategory(category)}
-                className={`px-4 py-2 rounded-full text-sm cursor-pointer capitalize transition-all ${
+                className={`px-3 py-1.5 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm cursor-pointer capitalize transition-all whitespace-nowrap ${
                   selectedCategory === category
                     ? "bg-emerald-500/20 text-emerald-400 border border-emerald-500/50"
                     : "bg-transparent text-slate-400 border border-slate-600 hover:border-emerald-500/30"
