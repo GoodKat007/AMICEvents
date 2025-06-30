@@ -32,35 +32,9 @@ export default function HomePage() {
               AMIC Events
             </span>
           </div>
-          <div className="flex items-center gap-2 sm:gap-4">
-            <div className="hidden lg:flex items-center gap-6">
-              <a
-                href="#products"
-                className="text-slate-300 text-sm hover:text-white transition-colors"
-              >
-                Products
-              </a>
-              <a
-                href="#services"
-                className="text-slate-300 text-sm hover:text-white transition-colors"
-              >
-                Services
-              </a>
-              <a
-                href="#about"
-                className="text-slate-300 text-sm hover:text-white transition-colors"
-              >
-                About
-              </a>
-              <a
-                href="#contact"
-                className="text-slate-300 text-sm hover:text-white transition-colors"
-              >
-                Contact
-              </a>
-            </div>
+          <div className="flex items-center">
             <button className="bg-gradient-to-r from-blue-900 to-yellow-500 text-white border-none px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg text-xs sm:text-sm font-medium cursor-pointer hover:opacity-90 transition-opacity whitespace-nowrap">
-              Get Quote
+              Quote
             </button>
           </div>
         </div>
@@ -68,7 +42,7 @@ export default function HomePage() {
 
       {/* Hero Section */}
       <section className="pt-16 sm:pt-24 lg:pt-32 pb-12 sm:pb-20 px-3 sm:px-6 lg:px-8 relative z-10">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        <div className="max-w-7xl mx-auto block lg:grid lg:grid-cols-2 gap-8 lg:gap-12 lg:items-center">
           <div>
             <div className="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/30 rounded-full px-4 py-2 mb-6">
               <div className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
@@ -77,7 +51,7 @@ export default function HomePage() {
               </span>
             </div>
 
-            <h1 className="text-3xl sm:text-4xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-6 bg-gradient-to-r from-blue-900 via-yellow-500 to-blue-900 bg-clip-text text-transparent">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-6 bg-gradient-to-r from-blue-900 via-yellow-500 to-blue-900 bg-clip-text text-transparent">
               PREMIUM EVENT APPAREL
             </h1>
 
@@ -129,7 +103,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="relative mt-8 lg:mt-0">
+          <div className="relative mt-12 lg:mt-0">
             <div className="bg-slate-900/80 border border-emerald-500/30 rounded-2xl p-6 relative overflow-hidden">
               <div className="bg-slate-900 rounded-lg p-3 mb-4 flex items-center gap-2">
                 <div className="w-2 h-2 bg-red-500 rounded-full"></div>
