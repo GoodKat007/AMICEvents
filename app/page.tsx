@@ -15,7 +15,7 @@ export default function HomePage() {
 
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 bg-slate-900/80 backdrop-blur-xl border-b border-emerald-500/20 z-50 h-16">
-        <div className="max-w-7xl mx-auto px-8 h-full flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 h-full flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="w-8 h-8 bg-gradient-to-r from-blue-900 to-yellow-500 rounded-lg flex items-center justify-center">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
@@ -24,7 +24,7 @@ export default function HomePage() {
             </div>
             <span className="text-white text-xl font-bold">AMIC Events</span>
           </div>
-          <div className="flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-8">
             <a
               href="#products"
               className="text-slate-300 text-sm hover:text-white transition-colors"
@@ -57,8 +57,8 @@ export default function HomePage() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-8 relative z-10">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <section className="pt-20 sm:pt-32 pb-12 sm:pb-20 px-4 sm:px-8 relative z-10">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div>
             <div className="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/30 rounded-full px-4 py-2 mb-6">
               <div className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
@@ -67,7 +67,7 @@ export default function HomePage() {
               </span>
             </div>
 
-            <h1 className="text-5xl lg:text-7xl font-bold leading-tight mb-6 bg-gradient-to-r from-blue-900 via-yellow-500 to-blue-900 bg-clip-text text-transparent">
+            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold leading-tight mb-6 bg-gradient-to-r from-blue-900 via-yellow-500 to-blue-900 bg-clip-text text-transparent">
               PREMIUM EVENT APPAREL
             </h1>
 
