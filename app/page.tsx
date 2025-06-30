@@ -227,7 +227,7 @@ export default function HomePage() {
       </section>
 
       {/* Sports Showcase */}
-      <section className="py-12 sm:py-20 px-4 sm:px-8 relative z-10">
+      <section className="py-12 sm:py-20 px-3 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
@@ -261,7 +261,7 @@ export default function HomePage() {
       {/* Services Section */}
       <section
         id="services"
-        className="py-12 sm:py-20 px-4 sm:px-8 relative z-10 bg-gradient-to-r from-teal-900/20 to-emerald-900/20"
+        className="py-12 sm:py-20 px-3 sm:px-6 lg:px-8 relative z-10 bg-gradient-to-r from-teal-900/20 to-emerald-900/20"
       >
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12 sm:mb-16">
@@ -299,7 +299,7 @@ export default function HomePage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-black border-t border-emerald-500/20 py-12 sm:py-16 px-4 sm:px-8 relative z-10">
+      <footer className="bg-black border-t border-emerald-500/20 py-12 sm:py-16 px-3 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
           <div className="col-span-2 md:col-span-1">
             <div className="flex items-center gap-3 mb-4">
