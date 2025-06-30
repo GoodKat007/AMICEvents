@@ -22,7 +22,9 @@ export default function HomePage() {
                 <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"></path>
               </svg>
             </div>
-            <span className="text-white text-xl font-bold">AMIC Events</span>
+            <span className="text-white text-lg sm:text-xl font-bold">
+              AMIC Events
+            </span>
           </div>
           <div className="flex items-center gap-4">
             <div className="hidden md:flex items-center gap-8">
@@ -69,12 +71,12 @@ export default function HomePage() {
               </span>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold leading-tight mb-6 bg-gradient-to-r from-blue-900 via-yellow-500 to-blue-900 bg-clip-text text-transparent">
+            <h1 className="text-3xl sm:text-4xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-6 bg-gradient-to-r from-blue-900 via-yellow-500 to-blue-900 bg-clip-text text-transparent">
               PREMIUM EVENT APPAREL
             </h1>
 
-            <div className="border-l-3 border-emerald-500 pl-6 mb-8">
-              <p className="text-xl text-slate-300 leading-relaxed">
+            <div className="border-l-3 border-emerald-500 pl-4 sm:pl-6 mb-6 sm:mb-8">
+              <p className="text-base sm:text-lg lg:text-xl text-slate-300 leading-relaxed">
                 Transform your events with custom-designed apparel that makes
                 lasting impressions. From corporate conferences to music
                 festivals, we deliver quality that speaks volumes.
@@ -86,30 +88,42 @@ export default function HomePage() {
                 START PROJECT
               </button>
               <button className="bg-transparent text-white border-2 border-emerald-500 px-6 sm:px-8 py-2 sm:py-3 rounded-lg text-base sm:text-lg font-medium cursor-pointer flex items-center justify-center gap-2 hover:bg-emerald-500/10 transition-colors">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
                   <path d="M8 5v14l11-7z"></path>
                 </svg>
                 <span className="hidden sm:inline">View Portfolio</span>
                 <span className="sm:hidden">Portfolio</span>
               </button>
             </div>
-            <div className="border-l-3 border-emerald-500 pl-4 sm:pl-6 mb-6 sm:mb-8">
-              <p className="text-lg sm:text-xl text-slate-300 leading-relaxed">
-                Transform your events with custom-designed apparel that makes lasting impressions.
-                From corporate conferences to music festivals, we deliver quality that speaks volumes.
-              </p>
-            </div>
-                <div className="text-2xl font-bold text-emerald-400">48hr</div>
+
+            <div className="grid grid-cols-3 gap-4">
+              <div className="bg-slate-900/50 border border-slate-600 rounded-lg p-3 sm:p-4 text-center">
+                <div className="text-xl sm:text-2xl font-bold text-emerald-400">
+                  500+
+                </div>
+                <div className="text-xs text-slate-400">Events Served</div>
+              </div>
+              <div className="bg-slate-900/50 border border-slate-600 rounded-lg p-3 sm:p-4 text-center">
+                <div className="text-xl sm:text-2xl font-bold text-emerald-400">
+                  48hr
+                </div>
                 <div className="text-xs text-slate-400">Rush Orders</div>
               </div>
-              <div className="bg-slate-900/50 border border-slate-600 rounded-lg p-4 text-center">
-                <div className="text-2xl font-bold text-emerald-400">100%</div>
+              <div className="bg-slate-900/50 border border-slate-600 rounded-lg p-3 sm:p-4 text-center">
+                <div className="text-xl sm:text-2xl font-bold text-emerald-400">
+                  100%
+                </div>
                 <div className="text-xs text-slate-400">Satisfaction</div>
               </div>
             </div>
           </div>
 
-          <div className="relative">
+          <div className="relative mt-8 lg:mt-0">
             <div className="bg-slate-900/80 border border-emerald-500/30 rounded-2xl p-6 relative overflow-hidden">
               <div className="bg-slate-900 rounded-lg p-3 mb-4 flex items-center gap-2">
                 <div className="w-2 h-2 bg-red-500 rounded-full"></div>
@@ -119,7 +133,7 @@ export default function HomePage() {
                   Custom Design Studio
                 </span>
               </div>
-              <div className="relative w-full h-72 rounded-lg overflow-hidden">
+              <div className="relative w-full h-64 sm:h-72 rounded-lg overflow-hidden">
                 <img
                   src="https://images.pexels.com/photos/934083/pexels-photo-934083.jpeg"
                   alt="Custom sports event apparel showcase"
@@ -150,16 +164,21 @@ export default function HomePage() {
       </section>
 
       {/* Products Section */}
-      <section id="products" className="py-20 px-8 relative z-10">
+      <section
+        id="products"
+        className="py-12 sm:py-20 px-4 sm:px-8 relative z-10"
+      >
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">PRODUCT CATALOG</h2>
-            <p className="text-xl text-slate-400 max-w-2xl mx-auto">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+              PRODUCT CATALOG
+            </h2>
+            <p className="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto">
               Premium apparel solutions for every type of event and occasion
             </p>
           </div>
 
-          <div className="flex justify-center gap-4 mb-12">
+          <div className="flex flex-wrap justify-center gap-3 sm:gap-4 mb-8 sm:mb-12">
             {categories.map((category) => (
               <button
                 key={category}
@@ -202,13 +221,13 @@ export default function HomePage() {
       </section>
 
       {/* Sports Showcase */}
-      <section className="py-20 px-8 relative z-10">
+      <section className="py-12 sm:py-20 px-4 sm:px-8 relative z-10">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
               SPORTS SHOWCASE
             </h2>
-            <p className="text-xl text-slate-400 max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto">
               Custom apparel solutions for sporting events and athletic teams
             </p>
           </div>
@@ -236,12 +255,14 @@ export default function HomePage() {
       {/* Services Section */}
       <section
         id="services"
-        className="py-20 px-8 relative z-10 bg-gradient-to-r from-teal-900/20 to-emerald-900/20"
+        className="py-12 sm:py-20 px-4 sm:px-8 relative z-10 bg-gradient-to-r from-teal-900/20 to-emerald-900/20"
       >
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">OUR SERVICES</h2>
-            <p className="text-xl text-slate-400 max-w-2xl mx-auto">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+              OUR SERVICES
+            </h2>
+            <p className="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto">
               End-to-end solutions for all your custom apparel needs
             </p>
           </div>
@@ -272,16 +293,18 @@ export default function HomePage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-black border-t border-emerald-500/20 py-16 px-8 relative z-10">
+      <footer className="bg-black border-t border-emerald-500/20 py-12 sm:py-16 px-4 sm:px-8 relative z-10">
         <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
-          <div>
+          <div className="col-span-2 md:col-span-1">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-8 h-8 bg-gradient-to-r from-cyan-500 to-emerald-500 rounded-lg flex items-center justify-center">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
                   <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"></path>
                 </svg>
               </div>
-              <span className="text-white text-xl font-bold">AMIC Events</span>
+              <span className="text-white text-lg sm:text-xl font-bold">
+                AMIC Events
+              </span>
             </div>
             <p className="text-slate-400 text-sm leading-relaxed mb-6">
               Premium custom apparel solutions for events that demand
@@ -315,7 +338,6 @@ export default function HomePage() {
         <div className="text-center mt-12 pt-8 border-t border-emerald-500/20">
           <p className="text-slate-400 text-sm">
             © 2024 AMIC Events. All rights reserved. Premium custom apparel for
-            © 2024 EventWear. All rights reserved. Premium custom apparel for
             exceptional events.
           </p>
         </div>
@@ -339,17 +361,19 @@ function ProductCard({
   gradient: string;
 }) {
   return (
-    <div className="bg-slate-900/50 border border-slate-600 rounded-2xl p-6 relative overflow-hidden">
+    <div className="bg-slate-900/50 border border-slate-600 rounded-2xl p-4 sm:p-6 relative overflow-hidden">
       <div
         className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${gradient}`}
       ></div>
-      <div className="relative w-full h-48 rounded-lg overflow-hidden mb-4">
+      <div className="relative w-full h-40 sm:h-48 rounded-lg overflow-hidden mb-4">
         <img src={image} alt={title} className="w-full h-full object-cover" />
       </div>
-      <h3 className="text-white text-xl font-bold mb-2">{title}</h3>
+      <h3 className="text-white text-lg sm:text-xl font-bold mb-2">{title}</h3>
       <p className="text-slate-400 text-sm mb-4">{description}</p>
       <div className="flex justify-between items-center">
-        <span className="text-emerald-400 text-lg font-bold">{price}</span>
+        <span className="text-emerald-400 text-base sm:text-lg font-bold">
+          {price}
+        </span>
         <button className="bg-transparent text-emerald-400 border border-emerald-400 px-3 py-1.5 rounded text-xs cursor-pointer hover:bg-emerald-400/10 transition-colors">
           Learn More
         </button>
@@ -369,12 +393,16 @@ function ShowcaseCard({
 }) {
   return (
     <div className="bg-slate-900/80 border border-emerald-500/30 rounded-2xl overflow-hidden">
-      <div className="relative w-full h-48">
+      <div className="relative w-full h-40 sm:h-48">
         <img src={image} alt={title} className="w-full h-full object-cover" />
       </div>
-      <div className="p-6">
-        <h3 className="text-white text-2xl font-bold mb-3">{title}</h3>
-        <p className="text-slate-400 leading-relaxed">{description}</p>
+      <div className="p-4 sm:p-6">
+        <h3 className="text-white text-xl sm:text-2xl font-bold mb-3">
+          {title}
+        </h3>
+        <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
+          {description}
+        </p>
       </div>
     </div>
   );
@@ -390,12 +418,14 @@ function ServiceCard({
   description: string;
 }) {
   return (
-    <div className="bg-slate-900/80 border border-emerald-500/30 rounded-2xl p-8">
+    <div className="bg-slate-900/80 border border-emerald-500/30 rounded-2xl p-6 sm:p-8">
       <div className="w-12 h-12 bg-gradient-to-r from-cyan-500 to-emerald-500 rounded-xl flex items-center justify-center mb-6">
         {icon}
       </div>
-      <h3 className="text-white text-2xl font-bold mb-4">{title}</h3>
-      <p className="text-slate-400 leading-relaxed">{description}</p>
+      <h3 className="text-white text-xl sm:text-2xl font-bold mb-4">{title}</h3>
+      <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
+        {description}
+      </p>
     </div>
   );
 }
