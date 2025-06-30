@@ -288,7 +288,7 @@ export default function HomePage() {
                   <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"></path>
                 </svg>
               </div>
-              <span className="text-white text-xl font-bold">EventWear</span>
+              <span className="text-white text-xl font-bold">AMIC Events</span>
             </div>
             <p className="text-slate-400 text-sm leading-relaxed mb-6">
               Premium custom apparel solutions for events that demand
@@ -321,6 +321,7 @@ export default function HomePage() {
 
         <div className="text-center mt-12 pt-8 border-t border-emerald-500/20">
           <p className="text-slate-400 text-sm">
+            © 2024 AMIC Events. All rights reserved. Premium custom apparel for
             © 2024 EventWear. All rights reserved. Premium custom apparel for
             exceptional events.
           </p>
