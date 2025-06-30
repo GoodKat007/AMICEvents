@@ -349,7 +349,7 @@ function ProductCard({
         className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${gradient}`}
       ></div>
       <div className="relative w-full h-48 rounded-lg overflow-hidden mb-4">
-        <Image src={image} alt={title} fill className="object-cover" />
+        <img src={image} alt={title} className="w-full h-full object-cover" />
       </div>
       <h3 className="text-white text-xl font-bold mb-2">{title}</h3>
       <p className="text-slate-400 text-sm mb-4">{description}</p>
@@ -375,7 +375,7 @@ function ShowcaseCard({
   return (
     <div className="bg-slate-900/80 border border-emerald-500/30 rounded-2xl overflow-hidden">
       <div className="relative w-full h-48">
-        <Image src={image} alt={title} fill className="object-cover" />
+        <img src={image} alt={title} className="w-full h-full object-cover" />
       </div>
       <div className="p-6">
         <h3 className="text-white text-2xl font-bold mb-3">{title}</h3>
