@@ -205,7 +205,7 @@ export default function HomePage() {
       <section className="py-20 px-8 relative z-10">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold text-white mb-4">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
               SPORTS SHOWCASE
             </h2>
             <p className="text-xl text-slate-400 max-w-2xl mx-auto">
@@ -240,7 +240,7 @@ export default function HomePage() {
       >
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold text-white mb-4">OUR SERVICES</h2>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">OUR SERVICES</h2>
             <p className="text-xl text-slate-400 max-w-2xl mx-auto">
               End-to-end solutions for all your custom apparel needs
             </p>
