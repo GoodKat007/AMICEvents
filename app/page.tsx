@@ -180,7 +180,7 @@ export default function HomePage() {
             ))}
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
             <ProductCard
               image="https://images.pexels.com/photos/8289384/pexels-photo-8289384.jpeg"
               title="Custom T-Shirts"
@@ -218,7 +218,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             <ShowcaseCard
               image="https://images.pexels.com/photos/15729335/pexels-photo-15729335.jpeg"
               title="Basketball Championships"
@@ -251,7 +251,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
             <ServiceCard
               icon={<StarIcon />}
               title="Custom Design"
@@ -278,7 +278,7 @@ export default function HomePage() {
 
       {/* Footer */}
       <footer className="bg-black border-t border-emerald-500/20 py-16 px-8 relative z-10">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
           <div>
             <div className="flex items-center gap-3 mb-4">
               <div className="w-8 h-8 bg-gradient-to-r from-cyan-500 to-emerald-500 rounded-lg flex items-center justify-center">
