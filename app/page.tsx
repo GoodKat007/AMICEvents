@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 
 export default function HomePage() {
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -124,11 +123,10 @@ export default function HomePage() {
                 </span>
               </div>
               <div className="relative w-full h-72 rounded-lg overflow-hidden">
-                <Image
+                <img
                   src="https://images.pexels.com/photos/934083/pexels-photo-934083.jpeg"
                   alt="Custom sports event apparel showcase"
-                  fill
-                  className="object-cover"
+                  className="w-full h-full object-cover"
                 />
               </div>
             </div>
